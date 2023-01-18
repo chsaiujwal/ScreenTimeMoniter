@@ -4,7 +4,6 @@ from config import Config
 import time
 from apscheduler.schedulers.background import BlockingScheduler
 def check(hours):
-    print("hmm")
     lib = ctypes.windll.kernel32
     t = lib.GetTickCount64()
     t = int(str(t)[:-3])
